@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Portfolio: Steve Mattingly</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <img src="https://www.globalgiving.org/favicon/favicon-96x96.png" alt="GlobalGiving logo" style="width:45%;" class="w3-round"><br><br>
+            <h4>Steve Mattingly</h4>
+            <p class="w3-text-grey">Template by W3.CSS</p>
+        </div>
+
+        <div class="w3-bar-block">
+            <a href="#css" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-css3 fa-fw w3-margin-right"></i>My CSS skills</a>
+            <a href="#games" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-gamepad fa-fw w3-margin-right"></i>Browser games</a>
+            <a href="#devops" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-clock-o fa-fw w3-margin-right"></i>Attendance tracking app</a>
+            <a href="#pl" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-code fa-fw w3-margin-right"></i>A programming language</a>
+            <a href="#cross-platform" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-mobile fa-fw w3-margin-right"></i>Cross-platform apps</a>
+            <a href="#github" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-code-fork fa-fw w3-margin-right"></i>GitHub</a>
+            <a href="#thanks" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-smile-o fa-fw w3-margin-right"></i>Thanks!</a>
+        </div>
+
+        <div class="w3-panel w3-large">
+            <a href="mailto:smattingly@suddenlink.net"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/steve-mattingly-aab8064a"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Page content -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Header -->
+        <header id="portfolio">
+            <a href="#"><img src="https://www.globalgiving.org/favicon/favicon-96x96.png" alt="GlobalGiving logo" style="width:65px;" class="w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+            <div class="w3-container w3-bottombar">
+                <h1><strong>Hello, GlobalGiving!</strong></h1>
+            </div>
+        </header>
+
+        <div class="w3-container">
+            <p>I've thrown together this page to provide some context for the work that I have to show you.</p>
+
+            <p>For many years, I have been coding for classroom purposes, and rarely for production. As a result, the work that I can show you may not be an excellent match for the specific Front End Developer skills that you have listed. In addition, some of the work is not mine alone, but collaborative work with students.</p>
+
+            <p>Still, I think I can illustrate my ability to solve problems with HTML, CSS, and JS.</p>
+        </div>
+
+        <div class="w3-container" id="css">
+            <h2>My CSS skills</h2>
+            <p>This page is also my best opportunity to show you what I can do with CSS.</p>
+
+            <p>Most of the academic work that I have to show you pays minimal attention to styling. Where there is more styling, the actual design decisions are mostly the work of students.</p>
+
+            <p>I have no particular expertise in choosing fonts, colors, layouts, etc. So, on this page I have adapted a CSS site template from w3schools to show that I am adept at applying existing CSS designs to Web content. I am also skilled with the CSS syntax for expressing design decisions.</p>
+        </div>
+
+        <div class="w3-container" id="games">
+            <h2>Browser games for intro programming</h2>
+
+            <p>I wanted novice programmers to do something fun in the browser, but focus on fundamentals and OOP without getting into HTML and DOM details. So, I built <a href="https://github.com/csci110/sgc" target="_blank">a simplified wrapper</a> around a popular JS game framework, and created game programming assignments.</p>
+
+            <p>Finished copies of the game assignments are presented below. Click each link to enjoy the gameplay, but <em>please keep in mind:</em>
+            </p>
+            <ol>
+                <li>you are not seeing the full course materials, which introduce the games, explain gameplay, etc., and</li>
+                <li>the JavaScript is obfuscated, because these are course assignment solutions. (I would be happy to share the private solutions repository with anyone at GlobalGiving. Just contact me with GitHub credentials.)</li>
+            </ol>
+
+            <div class="w3-row-padding">
+
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <img src="./images/strangerHunt.png" alt="Stranger Hunt game" style="width:100%">
+                    <div class="w3-container w3-white">
+                        <p><strong><a href="https://smattingly.github.io/sgc-games/strangerHunt/" target="_blank">Stranger Hunt</a></strong> is the students' first game. Score points when you click the mysterious stranger. Lose points when you click the old wizard Marcus. Game over when you click Princess Ann.</p>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <img src="./images/wizardsDuel.png" alt="Wizards' Duel game" style="width:100%">
+                    <div class="w3-container w3-white">
+                        <p>In <strong><a href="https://smattingly.github.io/sgc-games/wizardsDuel/" target="_blank">Wizards' Duel</a></strong> you play as Marcus. Dodge your opponent's spells with the up and down arrows. Cast spells with the space bar.</p>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-container w3-margin-bottom">
+
+                    <div class="w3-row-padding">
+                        <img src="./images/platformPrincess.png" alt="Platform Princess game" style="width:100%">
+                        <div class="w3-container w3-white">
+                            <p>In <strong><a href="https://smattingly.github.io/sgc-games/platformPrincess/" target="_blank">Platform Princess</a></strong> you play as Princess Ann. Use horizontal arrows and space bar to reach the exit door.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-row-padding">
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <img src="./images/castleBreakIn.png" alt="Castle Break In game" style="width:100%">
+                    <div class="w3-container w3-white" style="height: 100%;">
+                        <p><strong><a href="https://smattingly.github.io/sgc-games/castleBreakIn/" target="_blank">Castle Break In</a></strong> remakes an arcade classic, with lots of bonus features.</p>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-container w3-margin-bottom">
+                    <img src="./images/puzzledPrincess.png" alt="Puzzled Princess game" style="width:100%">
+                    <div class="w3-container w3-white" style="height: 100%;">
+                        <p><strong><a href="https://smattingly.github.io/sgc-games/puzzledPrincess/" target="_blank">Puzzled Princess</a></strong> has students build the unbeatable TicTacToe program in a <em>drag-and-drop</em> format.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container" id="devops">
+            <h2>DevOps and the attendance tracking app</h2>
+
+            <p>Students in my Professional Experience course sequence run a "company" called DevOps. You can learn more about the company and courses at our site's <a href="https://dewv.net/" target="_blank">homepage</a>.</p>
+
+            <p>We also use that site to deploy and operate our one production system: an attendance tracking app for the campus learning center. Similar to a punch clock, the system records the duration of student visits to the campus learning center.</p>
+
+            <p>Users of the app must authenticate against the campus Active Directory server, which our code consults via LDAP. Because of this and the privacy requirements concerning system data, I cannot provide you with access to the running system. I can point you to the <a href="https://github.com/dewv/nlcAttendance" target="_blank">GitHub repo</a> for version 2.0.0, a <a href="https://sailsjs.com" target="_blank">Sails</a>-based rewrite that we plan to deploy the first week in January.</p>
+
+            <p><a href="https://github.com/dewv/nlcAttendance/blob/9c75a7f738b6286d443ddf69be79ce45669e4b6c/views/layouts/layout.html#L83" target="_blank">Here</a> you can see a UI improvement introduced in version 2 of the attendance app. The effect is similar to elements of GitHub's UI. However, we have added CSS animation to support the "time clock" nature of our app.</p>
+
+            <p>These before-and-after images show the response when a user has walked up to an attendance tracking station, authenticated, and <code>POST</code>ed a few details to "check in" at the start of their visit.</p>
+
+            <div class="w3-row-padding w3-padding-16">
+
+                <div class="w3-half w3-container">
+                    <img src="./images/before.png" alt="Version 1" style="width:100%; cursor: zoom-in;" onclick="document.getElementById('beforeZoom').style.display='block'">
+                    <div class="w3-container w3-white">
+                        <p>In early Web fashion, version 1 <code>POST</code> requests lead to "dead end" response pages that served only to communicate the <code>POST</code>'s results to the user.</p>
+                    </div>
+                </div>
+
+                <div class="w3-half w3-container">
+                    <img src="./images/after.png" alt="Version 2" style="width:100%; cursor: zoom-in;" onclick="document.getElementById('afterZoom').style.display='block'">
+                    <div class="w3-container w3-white">
+                        <p>Using <a href="https://www.w3schools.com/w3css/w3css_references.asp" target="_blank">W3.CSS</a>, Version 2 communicates these results via a banner that appears at the top of a useful page. In this case, CSS animation is used to fade out the banner after the user has time to read it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container" id="pl">
+            <h2>Implementing a programming language</h2>
+            <p><a href="https://smattingly.github.io/language-implementation/" target="_blank">This program</a> is entirely browser based. It shows third-semester students some approaches to implementing a very simple "programming" language. For them, it is a clinic in object-oriented design and delegation.</p>
+
+            <p>I'm <a href="https://github.com/smattingly/language-implementation/" target="_blank">showing it to you</a> as an indication of what I can do with client-side JavaScript. Although it's mostly behind-the-scenes computation, there is a certain amount of DOM manipulation for the user interface.</p>
+
+            <p>I think it might be interesting to apply a front-end framework like React to this, but haven't found the time.</p>
+        </div>
+
+        <div class="w3-container" id="cross-platform">
+            <h2>Cross-platform apps</h2>
+
+            <p>For a special topics course I led my students through the construction of the <a href="http://emktg.cengage.com/marketing/sample_chapters/2015/9781305105966_CH01.pdf#page=3" target="_blank">example apps</a> from <a href="https://www.cengage.com/c/building-cross-platform-mobile-and-web-apps-for-engineers-and-scientists-an-active-learning-approach-1e-lingras/9781305105966PF/" target="_blank"><cite>Building Cross-Platform Mobile and Web Apps for Engineers and Scientists</cite></a>. The apps are built with Bootstrap, HTML5, CSS, and JS.</p>
+        </div>
+
+        <div class="w3-container" id="github">
+            <h2>My GitHub profile</h2>
+
+            <p>Finally, check out my <a href="https://github.com/smattingly" target="_blank">GitHub profile</a> and feel free to send me questions about anything you see that interests you.</p>
+        </div>
+
+        <div class="w3-container" id="thanks">
+            <h2>Thank you!</h2>
+
+            <p>Thanks for taking the time to look at my work. I'm very excited to work at GlobalGiving, and I hope to hear from you soon.</p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>, as adapted by Steve Mattingly</div>
+        </footer>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Modals -->
+    <div id="beforeZoom" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="./images/before.png" alt="Before" style="width:100%">
+        </div>
+    </div>
+
+    <div id="afterZoom" class="w3-modal" onclick="this.style.display='none'">
+        <!-- Modals -->
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="./images/after.png" alt="After" style="width:100%">
+        </div>
+    </div>
+    <!-- End modals -->
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
