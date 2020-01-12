@@ -27,18 +27,15 @@
             <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
                 <i class="fa fa-remove"></i>
             </a>
-            <img src="https://www.globalgiving.org/favicon/favicon-96x96.png" alt="GlobalGiving logo" style="width:45%;" class="w3-round"><br><br>
             <h4>Steve Mattingly</h4>
             <p class="w3-text-grey">Template by W3.CSS</p>
         </div>
 
         <div class="w3-bar-block">
-            <a href="#css" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-css3 fa-fw w3-margin-right"></i>My CSS skills</a>
             <a href="#games" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-gamepad fa-fw w3-margin-right"></i>Browser games</a>
             <a href="#devops" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-clock-o fa-fw w3-margin-right"></i>Attendance tracking app</a>
             <a href="#pl" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-code fa-fw w3-margin-right"></i>A programming language</a>
             <a href="#cross-platform" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-mobile fa-fw w3-margin-right"></i>Cross-platform apps</a>
-            <a href="#github" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-code-fork fa-fw w3-margin-right"></i>GitHub</a>
             <a href="#thanks" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-smile-o fa-fw w3-margin-right"></i>Thanks!</a>
         </div>
 
@@ -56,28 +53,18 @@
 
         <!-- Header -->
         <header id="portfolio">
-            <a href="#"><img src="https://www.globalgiving.org/favicon/favicon-96x96.png" alt="GlobalGiving logo" style="width:65px;" class="w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
             <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
             <div class="w3-container w3-bottombar">
-                <h1><strong>Hello, GlobalGiving!</strong></h1>
+                <h1><strong>Hello, world!</strong></h1>
             </div>
         </header>
 
-        <div class="w3-container">
-            <p>I've thrown together this page to provide some context for the work that I have to show you.</p>
+        <div class="w3-container" id="github">
+            <p>Check out my <a href="https://github.com/smattingly" target="_blank">GitHub profile</a> and feel free to send me questions about anything you see that interests you.</p>
 
-            <p>For many years, I have been coding for classroom purposes, and rarely for production. As a result, the work that I can show you may not be an excellent match for the specific Front End Developer skills that you have listed. In addition, some of the work is not mine alone, but collaborative work with students.</p>
+            <p>For many years, I have been coding for classroom purposes, and rarely for production. As a result, some of the work is not mine alone, but collaborative work with students.</p>
 
-            <p>Still, I think I can illustrate my ability to solve problems with HTML, CSS, and JS.</p>
-        </div>
-
-        <div class="w3-container" id="css">
-            <h2>My CSS skills</h2>
-            <p>This page is also my best opportunity to show you what I can do with CSS.</p>
-
-            <p>Most of the academic work that I have to show you pays minimal attention to styling. Where there is more styling, the actual design decisions are mostly the work of students.</p>
-
-            <p>I have no particular expertise in choosing fonts, colors, layouts, etc. So, on this page I have adapted a CSS site template from w3schools to show that I am adept at applying existing CSS designs to Web content. I am also skilled with the CSS syntax for expressing design decisions.</p>
+            <p>I've thrown together this page to provide some context for that work.</p>
         </div>
 
         <div class="w3-container" id="games">
@@ -89,7 +76,7 @@
             </p>
             <ol>
                 <li>you are not seeing the full course materials, which introduce the games, explain gameplay, etc., and</li>
-                <li>the JavaScript is obfuscated, because these are course assignment solutions. (I would be happy to share the private solutions repository with anyone at GlobalGiving. Just contact me with GitHub credentials.)</li>
+                <li>the JavaScript is obfuscated, because these are course assignment solutions. (I would be happy to share the private solutions repository. Just contact me with GitHub credentials.)</li>
             </ol>
 
             <div class="w3-row-padding">
@@ -143,7 +130,7 @@
 
             <p>We also use that site to deploy and operate our one production system: an attendance tracking app for the campus learning center. Similar to a punch clock, the system records the duration of student visits to the campus learning center.</p>
 
-            <p>Users of the app must authenticate against the campus Active Directory server, which our code consults via LDAP. Because of this and the privacy requirements concerning system data, I cannot provide you with access to the running system. I can point you to the <a href="https://github.com/dewv/nlcAttendance" target="_blank">GitHub repo</a> for version 2.0.0, a <a href="https://sailsjs.com" target="_blank">Sails</a>-based rewrite that we plan to deploy the first week in January.</p>
+            <p>Users of the app must authenticate against the campus Active Directory server, which our code consults via LDAP. Because of this and the privacy requirements concerning system data, I cannot provide you with access to the running system. I can point you to the <a href="https://github.com/dewv/nlcAttendance" target="_blank">GitHub repo</a> for version 2.0.0, a <a href="https://sailsjs.com" target="_blank">Sails</a>-based rewrite that we have just deployed.</p>
 
             <p><a href="https://github.com/dewv/nlcAttendance/blob/9c75a7f738b6286d443ddf69be79ce45669e4b6c/views/layouts/layout.html#L83" target="_blank">Here</a> you can see a UI improvement introduced in version 2 of the attendance app. The effect is similar to elements of GitHub's UI. However, we have added CSS animation to support the "time clock" nature of our app.</p>
 
@@ -182,67 +169,11 @@
             <p>For a special topics course I led my students through the construction of the <a href="http://emktg.cengage.com/marketing/sample_chapters/2015/9781305105966_CH01.pdf#page=3" target="_blank">example apps</a> from <a href="https://www.cengage.com/c/building-cross-platform-mobile-and-web-apps-for-engineers-and-scientists-an-active-learning-approach-1e-lingras/9781305105966PF/" target="_blank"><cite>Building Cross-Platform Mobile and Web Apps for Engineers and Scientists</cite></a>. The apps are built with Bootstrap, HTML5, CSS, and JS.</p>
         </div>
 
-        <div class="w3-container" id="github">
-            <h2>My GitHub profile</h2>
-
-            <p>Finally, check out my <a href="https://github.com/smattingly" target="_blank">GitHub profile</a> and feel free to send me questions about anything you see that interests you.</p>
-        </div>
 
         <div class="w3-container" id="thanks">
             <h2>Thank you!</h2>
 
-            <p>Thanks for taking the time to look at my work. I'm very excited to work at GlobalGiving, and I hope to hear from you soon.</p>
-        </div>
-
-        <hr style="border: 5px solid black;">
-
-        <div class="w3-container">
-            <p>I was annoyed that the online job application form did not allow paragraph breaks in responses.</p>
-            <p>I have duplicated my responses here, in a more legible form.</p>
-        </div>
-
-        <div class="w3-container" id="letter">
-            <h2>Cover letter</h2>
-
-            <p>There are two main reasons that I want to work at GlobalGiving. The first is code. I am happiest when I&#39;m immersed in code-- designing, writing, testing, debugging, fixing. When people ask me what I do for fun, I tell them my fun looks a lot like my work.</p>
-            <p>The second reason is meaning. I enjoy code for code&#39;s sake but I would prefer that it be useful to someone. I&#39;ve written code that I consider useful. But until now, I&#39;ve never seen an opportunity to work on code that would directly contribute to meeting basic human needs for food, clothing, and shelter. I can&#39;t pass that up, and I can&#39;t stop thinking about how rewarding that would feel.</p>
-            <p>Reading the job requirements, I see that you are looking for candidates with 3+ years of relevant experience. I&#39;d like to use the rest of this &quot;cover letter&quot; to address that, and explain why I think GlobalGiving wants to hire me.</p>
-            <p>You could argue that I&#39;m &quot;overqualified&quot;, with seventeen years of experience in software development and management, followed by <em>another</em> fourteen years teaching college computer science. But I am happy with your job description&#39;s salary range, the remote option is attractive and makes it feasible for me to take the job, and I am absolutely fired up by the thought of any code-oriented role with GlobalGiving.</p>
-            <p>On the other hand, you could argue that I&#39;m &quot;underqualified&quot; with respect to some specific skills listed for the job. Although I build and operate Web-based systems with and for my students, the client code is mostly plain vanilla JS, the CSS is pretty simple, and cross-browser techniques are limited to polyfills plus rigorously validated markup. All pretty basic, but I can and will learn anything related to code and Web technologies. I&#39;ll learn it quickly, well, and with a great deal of independence. And I&#39;ll love every minute of it.</p>
-            <p>Finally, I have great strengths with respect to some of the &quot;process oriented&quot; aspects of the job description. The Professional Experience courses that I teach draw on my experience outside of the classroom to emphasize organizational and process concepts as much as technical ones (see <a href='https://dewv.net/' target='_blank' class='url'>https://dewv.net/</a>). Our DevOps organization onboards new &quot;staff&quot; every semester, covering git/GitHub workflows, bug tracking, Scrum, Travis CI, Grunt automation, and a server stack that has evolved to include Node, Express, Sails, EJS, and MySQL.</p>
-            <p>I hope I have convinced you to contact me. </p>
-            <p>Thanks,</p>
-            <p>Steve Mattingly</p>
-        </div>
-
-        <div class="w3-container" id="changes">
-            <h2>Changes to globalgiving.org</h2>
-
-            <p>When I work on a site, I tend to be most interested in the JavaScript. However, since I&#39;m not going to try to deminify your JavaScript, I&#39;ll share what I see in some other areas.</p>
-            <p>When I work on a site, I tend to be most interested in the JavaScript. However, since I&#39;m not going to try to deminify your JavaScript, I&#39;ll share what I see in some other areas.</p>
-            <p>First, I would work to make the GlobalGiving site compliant with W3C standards. Correcting issues like those identified at <a href='https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.globalgiving.org%2F' target='_blank' class='url'>https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.globalgiving.org%2F</a> would make the site more accessible to all users, and better supported by all browsers.</p>
-            <p>Next, I would suggest redesigning the site features that use hover menus, eliminating the hover activation in favor of a click menu or other alternative. While exploring the site, I genuinely had navigation trouble due to this: difficulty accessing top menu items like &quot;About Us&quot; because my mouse passed over &quot;Explore Projects,&quot; popping up a menu I did not want. The large size of the menu exacerbates the problem, making it inconvenient to mouse out of the menu to deactivate it. The filter menus on <a href='https://www.globalgiving.org/search/' target='_blank' class='url'>https://www.globalgiving.org/search/</a> have similar problems; the Country filter menu is particularly aggravating because it doesn&#39;t always deactivate when it should.</p>
-            <p>Finally, there is a 404 returned for <a href='https://www.globalgiving.org/img/giftCards/banner_left_sm.jpg' target='_blank' class='url'>https://www.globalgiving.org/img/giftCards/banner_left_sm.jpg</a>. The broswer GETs this URL for some smaller screen clients. While the fix for that error is likely trivial, I would look for a systematic way to ensure that all existing errors of this type are found, and all future ones are prevented from going into production. </p>
-        </div>
-
-        <div class="w3-container" id="story">
-            <h2>Tell us a story</h2>
-
-            <p>One anniversary, my wife and I stayed at a bed-and-breakfast in western Pennsylvania. Driving there, we passed signs for Frank Lloyd Wright&#39;s Fallingwater. My wife loves architecture, and Fallingwater is one of the Lego architecture series that she displays in our home.</p>
-            <p>She suggested that we try to tour the house. I told her I had checked but there were no tours &quot;currently&quot; running. But, I revealed, we had tickets for Kentuck Knob, another of Wright&#39;s nearby designs. This cheered her, and the tour was a bigger hit than I expected. Afterwards, she was still excited, and suggested a future trip to see Fallingwater. </p>
-            <p>I then revealed that there were no tours of Fallingwater <em>that</em> day, but we had tickets for the first tour the following day. She enjoyed Fallingwater even more, and started reading more about Wright and other home designers. Recently, she surprised everyone with her plans to begin another degree in architecture.</p>
-        </div>
-
-        <div class="w3-container" id="favorite">
-            <h2>Favorite project</h2>
-
-            <p>My favorite is Project #18728, Long-Term Food Security for 4000 Samburus in Kenya.</p>
-            <p>I chose this project because it meets two criteria that I value in charitable projects.</p>
-            <ol>
-                <li>It is addressing basic human survival needs like food, water, clothing, or shelter.</li>
-                <li>It emphasizes sustainable solutions that make people and communities more self-sufficient.</li>
-
-            </ol>
+            <p>Thanks for taking the time to look at my work.</p>
         </div>
 
         <!-- Footer -->
