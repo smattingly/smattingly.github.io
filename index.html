@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <style>
+        body {
+            background-color: #ccd6dd;
+        }
+
+        a {
+            color: #0000ff;
+        }
+
         .sidebar {
             position: fixed;
             top: 0;
@@ -15,7 +23,9 @@
             left: 0;
             z-index: 100;
             padding: 0 0 0;
-            box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+            background-color: #66757f;
+            color: #e1e8ed;
+            box-shadow: inset -1px 0 0 black;
         }
 
         .sidebar-sticky {
@@ -35,13 +45,26 @@
 
         .sidebar .nav-link {
             font-size: .875rem;
-            font-weight: 500;
-            color: #333;
+            font-weight: 300;
+            color: #e1e8ed;
+        }
+
+        .sidebar .fa {
+            color: #e1e8ed;
         }
 
         .navbar-toggler {
             top: .25rem;
             right: 1rem;
+        }
+
+        .cell-color {
+            background-color: #e1e8ed;
+            border: 3px groove #ccd6dd;
+        }
+
+        .modal-content {
+            background-color: #e1e8ed;
         }
     </style>
 </head>
@@ -49,7 +72,7 @@
 <!-- Blessed are the source readers, for they shall inherit the Web. -->
 
 <body>
-    <nav class="navbar navbar-light bg-light sticky-top flex-md-nowrap p-0">
+    <nav class="navbar sticky-top flex-md-nowrap p-0 navbar-light">
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -57,9 +80,9 @@
 
     <div class="container-fluid">
         <div class="row">
-            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
                 <div class="sidebar-sticky pt-3">
-                    <div class="ml-2 lead font-weight-bold">Portfolio</div>
+                    <div class="ml-2 lead">Portfolio</div>
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a href="#games" class="nav-link"><i class="fa fa-gamepad fa-fw pr-4"></i>Browser games</a>
@@ -76,8 +99,11 @@
                         <li class="nav-item">
                             <a href="#thanks" class="nav-link"><i class="fa fa-smile-o fa-fw pr-4"></i>Thanks!</a>
                         </li>
+                        <li class="nav-item pt-3">
+                            <a href="#top" class="nav-link"><i class="fa fa-history fa-fw pr-4"></i>Back to top</a>
+                        </li>
                     </ul>
-                    <div class="m-5 pt-5">
+                    <div class="m-5 pt-3">
                         <a href="mailto:mattingly@fastmail.com"><i class="fa fa-envelope float-left"></i></a>
                         <a href="https://www.linkedin.com/in/steve-mattingly" target="_blank"><i class="fa fa-linkedin float-right"></i></a>
                     </div>
@@ -89,7 +115,7 @@
             </button>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-                <div class="container">
+                <div id="top" class="container">
                     <h1>Steve Mattingly</h1>
 
                     <p>Hello, world!</p>
@@ -98,7 +124,7 @@
 
                     <p>For many years, I have been coding for classroom purposes, and rarely for production. As a result, some of the work is not mine alone, but collaborative work with students.</p>
 
-                    <p>I've put together this page to provide some context for that work.</p>
+                    <p>I've put together this portfolio to provide some context for that work.</p>
                 </div>
 
                 <div class="container" id="games">
@@ -114,33 +140,33 @@
                     </ol>
 
                     <div class="row">
-                        <div class="col-md-4">
-                            <img src="./images/strangerHunt.png" alt="Stranger Hunt game" style="width:100%">
+                        <div class="col-md-4 cell-color">
+                            <img src="./images/strangerHunt.png" alt="Stranger Hunt game" class="mt-2 w-100">
                             <p><strong><a href="https://smattingly.github.io/sgc-games/strangerHunt/" target="_blank">Stranger Hunt</a></strong> is the students' first game. Score points when you click the mysterious stranger. Lose points when you click the old wizard Marcus. Game over when you click Princess Ann.</p>
                         </div>
 
-                        <div class="col-md-4">
-                            <img src="./images/wizardsDuel.png" alt="Wizards' Duel game" style="width:100%">
+                        <div class="col-md-4 cell-color">
+                            <img src="./images/wizardsDuel.png" alt="Wizards' Duel game" class="mt-2 w-100">
                             <p>In <strong><a href="https://smattingly.github.io/sgc-games/wizardsDuel/" target="_blank">Wizards' Duel</a></strong> you play as Marcus. Dodge your opponent's spells with the up and down arrows. Cast spells with the space bar.</p>
                         </div>
 
-                        <div class="col-md-4">
-                            <img src="./images/platformPrincess.png" alt="Platform Princess game" style="width:100%">
+                        <div class="col-md-4 cell-color">
+                            <img src="./images/platformPrincess.png" alt="Platform Princess game" class="mt-2 w-100">
                             <p>In <strong><a href="https://smattingly.github.io/sgc-games/platformPrincess/" target="_blank">Platform Princess</a></strong> you play as Princess Ann. Use horizontal arrows and space bar to reach the exit door.</p>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="./images/castleBreakIn.png" alt="Castle Break In game" style="width:100%">
+                    <div class="row mb-3">
+                        <div class="col-md-4 cell-color">
+                            <img src="./images/castleBreakIn.png" alt="Castle Break In game" class="mt-2 w-100">
                             <p><strong><a href="https://smattingly.github.io/sgc-games/castleBreakIn/" target="_blank">Castle Break In</a></strong> remakes an arcade classic, with lots of bonus features.</p>
                         </div>
 
                         <div class="col-md-4">
                         </div>
 
-                        <div class="col-md-4">
-                            <img src="./images/puzzledPrincess.png" alt="Puzzled Princess game" style="width:100%">
+                        <div class="col-md-4 cell-color">
+                            <img src="./images/puzzledPrincess.png" alt="Puzzled Princess game" class="mt-2 w-100">
                             <p><strong><a href="https://smattingly.github.io/sgc-games/puzzledPrincess/" target="_blank">Puzzled Princess</a></strong> has students build the unbeatable TicTacToe program in a <em>drag-and-drop</em> format.</p>
                         </div>
                     </div>
@@ -159,15 +185,15 @@
 
                     <p>These before-and-after images show the response when a user has walked up to an attendance tracking station, authenticated, and <code>POST</code>ed a few details to "check in" at the start of their visit.</p>
 
-                    <div class="row">
-                        <div class="col-md-6 container">
-                            <img src="./images/before.png" alt="Version 1" style="width:100%; cursor: zoom-in;" data-toggle="modal" data-target="#beforeZoom">
+                    <div class="row mb-3">
+                        <div class="col-md-6 container cell-color">
+                            <img src="./images/before.png" alt="Version 1" class="mt-2 w-100" style="cursor: zoom-in;" data-toggle="modal" data-target="#beforeZoom">
                             <p>In early Web fashion, version 1 <code>POST</code> requests lead to "dead end" response pages that served only to communicate the <code>POST</code>'s results to the user.</p>
                         </div>
 
-                        <div class="col-md-6 container">
-                            <img src="./images/after.png" alt="Version 2" style="width:100%; cursor: zoom-in;" data-toggle="modal" data-target="#afterZoom">
-                            <p>Using <a href="https://www.w3schools.com/w3css/w3css_references.asp" target="_blank">W3.CSS</a>, Version 2 communicates these results via a banner that appears at the top of a useful page. In this case, CSS animation is used to fade out the banner after the user has time to read it.</p>
+                        <div class="col-md-6 container cell-color">
+                            <img src="./images/after.png" alt="Version 2" class="mt-2 w-100" style="cursor: zoom-in;" data-toggle="modal" data-target="#afterZoom">
+                            <p>Using Bootstrap, Version 2 communicates these results via an "alert" banner that appears at the top of a useful page. In this case, CSS animation is used to fade out the banner after the user has time to read it.</p>
                         </div>
                     </div>
                 </div>
@@ -188,9 +214,9 @@
                 </div>
 
                 <div class="container" id="thanks">
-                    <h2>Thank you!</h2>
+                    <h2>Thanks!</h2>
 
-                    <p>Thanks for taking the time to look at my work.</p>
+                    <p>Thank you for taking the time to look at my work.</p>
                 </div>
 
             </main>
@@ -199,26 +225,26 @@
 
     <!-- Modals -->
     <div id="beforeZoom" class="modal fade">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="float-right pr-2">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <img src="./images/before.png" alt="Before" style="width:100%;">
+                    <img src="./images/before.png" alt="Before" class="border w-100">
                 </div>
             </div>
         </div>
     </div>
 
     <div id="afterZoom" class="modal fade">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="float-right pr-2">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <img src="./images/after.png" alt="Before" style="width:100%;">
+                    <img src="./images/after.png" alt="Before" class="border w-100">
                 </div>
             </div>
         </div>
