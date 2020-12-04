@@ -78,15 +78,15 @@
 <!-- Blessed are the source readers, for they shall inherit the Web. -->
 
 <body>
-    <nav class="navbar sticky-top flex-md-nowrap p-0 navbar-light">
-        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav>
-
     <div class="container-fluid">
+        <nav class="navbar sticky-top flex-md-nowrap p-0 navbar-light">
+            <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
         <div class="row">
-            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse navbar-collapse">
                 <div class="sidebar-sticky pt-3">
                     <div class="ml-2 lead">Contents</div>
                     <ul class="nav flex-column">
@@ -276,6 +276,10 @@
     <script>
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        $('li.nav-item>a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
         });
     </script>
 </body>
