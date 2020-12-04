@@ -86,7 +86,7 @@
         <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
                 <div class="sidebar-sticky pt-3">
-                    <div class="ml-2 lead">Portfolio</div>
+                    <div class="ml-2 lead">Contents</div>
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a href="#games" class="nav-link"><i class="fa fa-gamepad fa-fw pr-4"></i>Browser games</a>
@@ -106,7 +106,19 @@
                         <li class="nav-item pt-3">
                             <a href="#top" class="nav-link"><i class="fa fa-history fa-fw pr-4"></i>Back to top</a>
                         </li>
-                        <li class="nav-item pt-5">
+                    </ul>
+                    <div class="ml-2 mt-3 lead">Validators</div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="https://validator.w3.org/unicorn/check?ucn_uri=https%3A%2F%2Fsmattingly.github.io&ucn_task=conformance#" target="_blank" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Please note that I cannot fix reported issues in third party libraries."><img src="https://www.w3.org/favicon.ico" alt="W3C" style="width: 10%;">&nbsp;W3C <small>HTML, CSS</small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://wave.webaim.org/report#/https://smattingly.github.io/" target="_blank" class="nav-link"><img src="https://wave.webaim.org/favicon.ico" alt="WAVE" style="width: 10%;">&nbsp;WAVE <small>a11y</small></a>
+                        </li>
+                    </ul>
+                    <div class="ml-2 mt-3 lead">Contact me</div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
                             <a class="nav-link" href="https://www.linkedin.com/in/steve-mattingly" target="_blank"><i class="fa fa-linkedin fa-fw pr-4"></i>steve-mattingly</a>
                         </li>
                         <li class="nav-item">
@@ -257,7 +269,13 @@
     <!-- End modals -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
