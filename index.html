@@ -13,7 +13,7 @@
         }
 
         a {
-            color: #0000ff;
+            color: #0069aa;
         }
 
         .sidebar {
@@ -23,8 +23,8 @@
             left: 0;
             z-index: 100;
             padding: 0 0 0;
-            background-color: #66757f;
-            color: #e1e8ed;
+            background-color: #0069aa;
+            color: #ebf2f7;
             box-shadow: inset -1px 0 0 black;
         }
 
@@ -46,11 +46,11 @@
         .sidebar .nav-link {
             font-size: .875rem;
             font-weight: 300;
-            color: #e1e8ed;
+            color: #ebf2f7;
         }
 
         .sidebar .fa {
-            color: #e1e8ed;
+            color: #ebf2f7;
         }
 
         .navbar-toggler {
@@ -59,12 +59,12 @@
         }
 
         .cell-color {
-            background-color: #e1e8ed;
+            background-color: #ebf2f7;
             border: 3px groove #ccd6dd;
         }
 
         .modal-content {
-            background-color: #e1e8ed;
+            background-color: #ccd6dd;
         }
     </style>
 </head>
@@ -102,11 +102,16 @@
                         <li class="nav-item pt-3">
                             <a href="#top" class="nav-link"><i class="fa fa-history fa-fw pr-4"></i>Back to top</a>
                         </li>
+                        <li class="nav-item pt-5">
+                            <a class="nav-link" href="https://www.linkedin.com/in/steve-mattingly" target="_blank"><i class="fa fa-linkedin fa-fw pr-4"></i>steve-mattingly</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/smattingly" target="_blank"><i class="fa fa-github fa-fw pr-4"></i>smattingly</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:mattingly@fastmail.com"><i class="fa fa-envelope fa-fw pr-4"></i>mattingly@fastmail.com</a>
+                        </li>
                     </ul>
-                    <div class="m-5 pt-3">
-                        <a href="mailto:mattingly@fastmail.com"><i class="fa fa-envelope float-left"></i></a>
-                        <a href="https://www.linkedin.com/in/steve-mattingly" target="_blank"><i class="fa fa-linkedin float-right"></i></a>
-                    </div>
                 </div>
             </nav>
 
@@ -114,7 +119,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
                 <div id="top" class="container">
                     <h1>Steve Mattingly</h1>
 
@@ -122,7 +127,7 @@
 
                     <p>Check out my <a href="https://github.com/smattingly" target="_blank">GitHub profile</a> and feel free to send me questions about anything you see that interests you.</p>
 
-                    <p>For many years, I have been coding for classroom purposes, and rarely for production. As a result, some of the work is not mine alone, but collaborative work with students.</p>
+                    <p>For many years, I have been coding for classroom purposes. As a result, some of the work is not mine alone, but collaborative work with students.</p>
 
                     <p>I've put together this portfolio to provide some context for that work.</p>
                 </div>
@@ -130,13 +135,13 @@
                 <div class="container" id="games">
                     <h2>Browser games for intro programming</h2>
 
-                    <p>I wanted novice programmers to do something fun in the browser, but focus on fundamentals and OOP without getting into HTML and DOM details. So, I built <a href="https://github.com/csci110/sgc" target="_blank">a simplified wrapper</a> around a popular JS game framework, and created game programming assignments.</p>
+                    <p>I wanted novice programmers to do something fun in the browser, but focus on fundamentals and OOP without getting into HTML and DOM details. So, I built <a href="https://github.com/csci110/sgc" target="_blank">a simplified wrapper</a> around a popular JavaScript game framework, and created game programming assignments.</p>
 
                     <p>Finished copies of the game assignments are presented below. Click each link to enjoy the gameplay, but <em>please keep in mind:</em>
                     </p>
                     <ol>
                         <li>you are not seeing the full course materials, which introduce the games, explain gameplay, etc., and</li>
-                        <li>the JavaScript is obfuscated, because these are course assignment solutions. (I would be happy to share the private solutions repository. Just contact me with GitHub credentials.)</li>
+                        <li>the JavaScript is obfuscated, because these are course assignment solutions. (I would be happy to share the private solutions repository. Just contact me with your GitHub username.)</li>
                     </ol>
 
                     <div class="row">
@@ -162,9 +167,6 @@
                             <p><strong><a href="https://smattingly.github.io/sgc-games/castleBreakIn/" target="_blank">Castle Break In</a></strong> remakes an arcade classic, with lots of bonus features.</p>
                         </div>
 
-                        <div class="col-md-4">
-                        </div>
-
                         <div class="col-md-4 cell-color">
                             <img src="./images/puzzledPrincess.png" alt="Puzzled Princess game" class="mt-2 w-100">
                             <p><strong><a href="https://smattingly.github.io/sgc-games/puzzledPrincess/" target="_blank">Puzzled Princess</a></strong> has students build the unbeatable TicTacToe program in a <em>drag-and-drop</em> format.</p>
@@ -177,18 +179,18 @@
 
                     <p>Students in my Professional Experience course sequence run a "company" called DevOps. You can learn more about the company and courses at our site's <a href="https://dewv.net/" target="_blank">homepage</a>.</p>
 
-                    <p>We also use that site to deploy and operate our one production system: an attendance tracking app for the campus learning center. Similar to a punch clock, the system records the duration of student visits to the campus learning center.</p>
+                    <p>We also use that site to deploy and operate our one production system: an attendance tracking application for the campus learning center. Similar to a punch clock, the system records the duration of student visits to the campus learning center.</p>
 
-                    <p>Users of the app must authenticate against the campus Active Directory server, which our code consults via LDAP. Because of this and the privacy requirements concerning system data, I cannot provide you with access to the running system. I can point you to the <a href="https://github.com/dewv/nlcAttendance" target="_blank">GitHub repo</a> for version 2.0.0, a <a href="https://sailsjs.com" target="_blank">Sails</a>-based rewrite that we have just deployed.</p>
+                    <p>You can use Gitpod to <a href="https://gitpod.io/#https://github.com/dewv/nlcAttendance" target="_blank">launch a test instance</a> of the system. (You will be prompted to create a free Gitpod account if you do not already have one. It will take a while for Gitpod to fetch Docker images and install the application. You should see two new browser tabs: one with the Gitpod IDE, and one with the running application. Information icons <i class="fa fa-info-circle fa-fw"></i> provide some guidance for new test users.) To see the application code, visit the <a href="https://github.com/dewv/nlcAttendance" target="_blank">GitHub repository</a>.</p>
 
-                    <p><a href="https://github.com/dewv/nlcAttendance/blob/9c75a7f738b6286d443ddf69be79ce45669e4b6c/views/layouts/layout.html#L83" target="_blank">Here</a> you can see a UI improvement introduced in version 2 of the attendance app. The effect is similar to elements of GitHub's UI. However, we have added CSS animation to support the "time clock" nature of our app.</p>
+                    <p>Version 1 of the application was built with Node.js, Express, and MySQL. Version 2 added <a href="https://sailsjs.com/" target="_blank">Sails.js</a>, a Rails-inspired MVC framework. Using the Sails object request manager, we have tested the application on MongoDB as well as MySQL.</p>
 
-                    <p>These before-and-after images show the response when a user has walked up to an attendance tracking station, authenticated, and <code>POST</code>ed a few details to "check in" at the start of their visit.</p>
+                    <p>Version 2 also added Bootstrap to improve the user interface. Several design decisions were inspired by elements of GitHub's UI. These before-and-after images show the response when a user has walked up to an attendance tracking station, authenticated, and <code>POST</code>ed a few details to "check in" at the start of their visit.</p>
 
                     <div class="row mb-3">
                         <div class="col-md-6 container cell-color">
                             <img src="./images/before.png" alt="Version 1" class="mt-2 w-100" style="cursor: zoom-in;" data-toggle="modal" data-target="#beforeZoom">
-                            <p>In early Web fashion, version 1 <code>POST</code> requests lead to "dead end" response pages that served only to communicate the <code>POST</code>'s results to the user.</p>
+                            <p>In early Web fashion, version 1 <code>POST</code> requests led to "dead end" response pages that served only to communicate the <code>POST</code>'s results to the user.</p>
                         </div>
 
                         <div class="col-md-6 container cell-color">
@@ -210,12 +212,11 @@
                 <div class="container" id="cross-platform">
                     <h2>Cross-platform apps</h2>
 
-                    <p>For a special topics course I led my students through the construction of the <a href="http://emktg.cengage.com/marketing/sample_chapters/2015/9781305105966_CH01.pdf#page=3" target="_blank">example apps</a> from <a href="https://www.cengage.com/c/building-cross-platform-mobile-and-web-apps-for-engineers-and-scientists-an-active-learning-approach-1e-lingras/9781305105966PF/" target="_blank"><cite>Building Cross-Platform Mobile and Web Apps for Engineers and Scientists</cite></a>. The apps are built with Bootstrap, HTML5, CSS, and JS.</p>
+                    <p>For a special topics course I led my students through the construction of the <a href="http://emktg.cengage.com/marketing/sample_chapters/2015/9781305105966_CH01.pdf#page=3" target="_blank">example apps</a> from <a href="https://www.cengage.com/c/building-cross-platform-mobile-and-web-apps-for-engineers-and-scientists-an-active-learning-approach-1e-lingras/9781305105966PF/" target="_blank"><cite>Building Cross-Platform Mobile and Web Apps for Engineers and Scientists</cite></a>. The apps are built with Bootstrap, HTML5, CSS, and JavaScript.</p>
                 </div>
 
                 <div class="container" id="thanks">
                     <h2>Thanks!</h2>
-
                     <p>Thank you for taking the time to look at my work.</p>
                 </div>
 
