@@ -99,6 +99,9 @@
                             <a href="#games" class="nav-link"><i class="fa fa-gamepad fa-fw pr-4"></i>Browser games</a>
                         </li>
                        <li class="nav-item">
+                            <a href="#pi" class="nav-link"><i class="fa fa-microchip fa-fw pr-4"></i>Web Workers</a>
+                        </li>
+                       <li class="nav-item">
                             <a href="#pl" class="nav-link"><i class="fa fa-code fa-fw pr-4"></i>Interpreter/compiler</a>
                         </li>
                         <li class="nav-item">
@@ -107,11 +110,8 @@
                         <li class="nav-item">
                             <a href="#thanks" class="nav-link"><i class="fa fa-smile-o fa-fw pr-4"></i>Thanks!</a>
                         </li>
-                        <li class="nav-item pt-2">
-                            <a href="#top" class="nav-link"><i class="fa fa-history fa-fw pr-4"></i>Back to top</a>
-                        </li>
                     </ul>
-                    <div class="ml-2 mt-3 lead">Validators</div>
+                    <div class="ml-2 mt-2 lead">Validators</div>
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a href="https://validator.w3.org/unicorn/check?ucn_uri=https%3A%2F%2Fsmattingly.github.io&ucn_task=conformance#" target="_blank" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Please note that I cannot fix reported issues in third party libraries."><img src="https://www.w3.org/favicon.ico" alt="W3C logo" style="width: 10%;">&nbsp;W3C <small>HTML, CSS</small></a>
@@ -120,7 +120,7 @@
                             <a href="https://wave.webaim.org/report#/https://smattingly.github.io/" target="_blank" class="nav-link"><img src="https://wave.webaim.org/favicon.ico" alt="WAVE logo" style="width: 10%;">&nbsp;WAVE <small>a11y</small></a>
                         </li>
                     </ul>
-                    <div class="ml-2 mt-3 lead">Contact me</div>
+                    <div class="ml-2 mt-2 lead">Contact me</div>
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link" href="https://www.linkedin.com/in/steve-mattingly" target="_blank"><i class="fa fa-linkedin fa-fw pr-4"></i>steve-mattingly</a>
@@ -226,6 +226,13 @@
                     </div>
                 </div>
              
+                <div class="container" id="pi">
+                    <h2>Parallel Processing with Web Workers</h2>
+		    <p><a href="https://csci280.github.io/parallel-pi/" target="_blank">This quick-and-dirty page</a> uses the HTML5 canvas and Web Workers to demonstrate parallel processing. Source code is <a href="https://github.com/csci280/csci280.github.io/tree/master/parallel" target="_blank">here</a>.</p>
+		        <p>Students are encouraged to experiment with the parameters and determine when the overhead of multi-threaded code outweighs the benefits.</p>
+			<p>Because I/O (drawing the points) is a very expensive operation, it skews the results somewhat; that’s why there is an option to turn off drawing. You can get a much more accurate estimate of &#960;'s value by (greatly) increasing the number of points (and disabling drawing if you don’t want to wait a while).</p>
+                </div>
+
                 <div class="container" id="pl">
                     <h2>An interpreter and compiler</h2>
                     <p><a href="https://smattingly.github.io/language-implementation/" target="_blank">This program</a> is a single page application, written in plain vanilla JavaScript. It shows third-semester students some approaches to implementing a very simple "programming" language. For them, it is a clinic in object-oriented design and delegation.</p>
