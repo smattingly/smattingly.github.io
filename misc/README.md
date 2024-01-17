@@ -1,1 +1,12 @@
-This is misc
+https://smattingly.github.io/basicEN.pdf
+https://smattingly.github.io/basicES.pdf
+https://smattingly.github.io/dependentsEN.pdf
+https://smattingly.github.io/dependentsES.pdf
+https://smattingly.github.io/s1EN.pdf
+https://smattingly.github.io/s1ES.pdf
+https://smattingly.github.io/s8812EN.pdf
+https://smattingly.github.io/s8812ES.pdf
+https://smattingly.github.io/eicEN.pdf
+https://smattingly.github.io/eicES.pdf
+https://smattingly.github.io/w2sEN.pdf
+https://smattingly.github.io/w2sES.pdf
