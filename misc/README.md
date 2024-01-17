@@ -1,12 +1,13 @@
-https://smattingly.github.io/basicEN.pdf
-https://smattingly.github.io/basicES.pdf
-https://smattingly.github.io/dependentsEN.pdf
-https://smattingly.github.io/dependentsES.pdf
-https://smattingly.github.io/s1EN.pdf
-https://smattingly.github.io/s1ES.pdf
-https://smattingly.github.io/s8812EN.pdf
-https://smattingly.github.io/s8812ES.pdf
-https://smattingly.github.io/eicEN.pdf
-https://smattingly.github.io/eicES.pdf
-https://smattingly.github.io/w2sEN.pdf
-https://smattingly.github.io/w2sES.pdf
+1. https://smattingly.github.io/b.pdf
+1. https://smattingly.github.io/basicEN.pdf
+1. https://smattingly.github.io/basicES.pdf
+1. https://smattingly.github.io/dependentsEN.pdf
+1. https://smattingly.github.io/dependentsES.pdf
+1. https://smattingly.github.io/s1EN.pdf
+1. https://smattingly.github.io/s1ES.pdf
+1. https://smattingly.github.io/s8812EN.pdf
+1. https://smattingly.github.io/s8812ES.pdf
+1. https://smattingly.github.io/eicEN.pdf
+1. https://smattingly.github.io/eicES.pdf
+1. https://smattingly.github.io/w2sEN.pdf
+1. https://smattingly.github.io/w2sES.pdf
